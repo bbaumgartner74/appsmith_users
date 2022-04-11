@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n    deleteUser: async() => {\n       Delete_user.run({id:users_table.triggeredRow.id})\n    }\n}",
+    "body": "export default {\n    deleteUser: async() => {\n       try{\n\t\t\t\t Delete_user.run({id:users_table.triggeredRow.id}).then(() => showAlert('User deleted successfully', 'success'))\n\t\t\t } catch(e){\n\t\t\t\t showAlert('Error - could not delete user', 'error')\n\t\t\t }\n    }\n}",
     "variables": []
   },
   "id": "Page1_deleteUser_function",
