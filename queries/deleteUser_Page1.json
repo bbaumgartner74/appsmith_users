@@ -19,9 +19,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n       return users_table.triggeredRow.id.toString()\n    }",
+      "body": "async() => {\n       Delete_user.run({id:users_table.triggeredRow.id})\n    }",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n       return users_table.triggeredRow.id.toString()\n    }"
+      "async() => {\n       Delete_user.run({id:users_table.triggeredRow.id})\n    }"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

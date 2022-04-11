@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n    deleteUser: () => {\n       return users_table.triggeredRow.id.toString()\n    }\n}",
+    "body": "export default {\n    deleteUser: async() => {\n       Delete_user.run({id:users_table.triggeredRow.id})\n    }\n}",
     "variables": []
   },
   "id": "Page1_deleteUser_function",
