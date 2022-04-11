@@ -865,7 +865,7 @@
             {
               "boxShadow": "NONE",
               "widgetName": "IconButton2",
-              "onClick": "{{showModal()}}",
+              "onClick": "{{showModal('add_user_form')}}",
               "buttonColor": "#3366FF",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634a.svg",
