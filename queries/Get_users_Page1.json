@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "User_API",
+    "name": "Get_users",
     "datasource": {
       "pluginId": "restapi-plugin",
       "messages": [],
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_User_API",
+  "id": "Page1_Get_users",
   "deleted": false,
   "gitSyncId": "62546fbbffd41441c6f9a799_625473e4ffd41441c6f9a79f"
 }

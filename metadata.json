@@ -5,7 +5,11 @@
   "publishedDefaultPageName": "Page1",
   "unpublishedDefaultPageName": "Page1",
   "invisibleActionFields": {
-    "Page1_User_API": {
+    "Page1_Create_user": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_Get_users": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
