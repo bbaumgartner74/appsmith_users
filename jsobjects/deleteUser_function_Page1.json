@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tdeleteUser: (id) => {\n\t\t  selectedRowValue.text = id\n\t}\n}",
+    "body": "export default {\n\tdeleteUser: () => {\n\t\ttry{\n\t\t  Delete_user.run().then(showAlert('User deleted successfully!', 'success'))\n\t} catch(e){\n\t\t\tshowAlert('Error - could not delete user!', 'error')\t\n\t\t}\n\t}\n}",
     "variables": []
   },
   "id": "Page1_deleteUser_function",

@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1936,
+          "rightColumn": 1712,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -946,7 +946,7 @@
               "placement": "CENTER"
             },
             {
-              "widgetName": "selectedRowValue",
+              "widgetName": "users_table_selectedRow_id",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595.svg",
               "topRow": 56,
@@ -960,9 +960,14 @@
               "dynamicTriggerPathList": [],
               "resetOnSubmit": true,
               "leftColumn": 13,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
               "labelStyle": "",
               "inputType": "TEXT",
+              "placeholderText": "",
               "isDisabled": false,
               "key": "c157rggaw6",
               "isRequired": false,
@@ -975,7 +980,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "iconAlign": "left",
-              "defaultText": ""
+              "defaultText": "{{users_table.selectedRow.id}}"
             }
           ]
         },
@@ -1007,10 +1012,10 @@
           "email",
           "first_name",
           "last_name",
-          "selectedRowValue",
           "user_form",
           "user_name",
-          "users_table"
+          "users_table",
+          "users_table_selectedRow_id"
         ],
         "validOnPageLoadActions": true,
         "id": "Page1",
