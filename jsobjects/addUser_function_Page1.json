@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tcreateUser: async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form')).then(Get_users.run())\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}\n}",
+    "body": "export default {\n\tcreateUser: async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form'))\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t} finally{\n\t\t\tGet_users.run()\n\t\t}\n\t}\n}",
     "variables": []
   },
   "id": "Page1_addUser_function",

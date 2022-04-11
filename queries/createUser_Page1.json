@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form')).then(Get_users.run())\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}",
+      "body": "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form'))\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t} finally{\n\t\t\tGet_users.run()\n\t\t}\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form')).then(Get_users.run())\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}"
+      "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form'))\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t} finally{\n\t\t\tGet_users.run()\n\t\t}\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
