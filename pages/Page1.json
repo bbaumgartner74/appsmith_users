@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1280,
+          "rightColumn": 1712,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -80,10 +80,10 @@
               "borderRadius": "0"
             },
             {
+              "multiRowSelection": true,
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "ID",
                 "id",
                 "first_name",
                 "last_name",
@@ -94,14 +94,16 @@
                 "department",
                 "CreatedAt",
                 "UpdatedAt",
-                "DeletedAt"
+                "DeletedAt",
+                "ID"
               ],
-              "isVisibleDownload": true,
+              "isVisibleDownload": false,
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
                 }
               ],
+              "compactMode": "DEFAULT",
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 8,
@@ -153,6 +155,9 @@
                 },
                 {
                   "key": "primaryColumns.department.computedValue"
+                },
+                {
+                  "key": "defaultSearchText"
                 }
               ],
               "leftColumn": 0,
@@ -167,7 +172,7 @@
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellVisible": false,
                   "isDerived": false,
@@ -184,9 +189,9 @@
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "CreatedAt",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.CreatedAt))}}"
@@ -201,9 +206,9 @@
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "UpdatedAt",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.UpdatedAt))}}"
@@ -218,9 +223,9 @@
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "DeletedAt",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.DeletedAt))}}"
@@ -231,7 +236,7 @@
                   "id": "id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
@@ -363,7 +368,7 @@
                 }
               },
               "delimiter": ",",
-              "defaultSearchText": "",
+              "defaultSearchText": "{{first_name.text}}",
               "key": "43s1n31h7h",
               "derivedColumns": {},
               "rightColumn": 64,
@@ -383,13 +388,24 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "isVisiblePagination": true,
+              "primaryColumnId": "id",
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
                 "task": 157,
                 "step": 62,
                 "status": 148,
                 "customColumn2": 87,
-                "action": 273
+                "action": 273,
+                "id": 193,
+                "age": 79,
+                "active": 87,
+                "first_name": 196,
+                "last_name": 191,
+                "user_name": 202,
+                "email": 234,
+                "CreatedAt": 273,
+                "UpdatedAt": 280,
+                "department": 148
               }
             },
             {
