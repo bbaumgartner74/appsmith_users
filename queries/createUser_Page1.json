@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "createUser",
-    "fullyQualifiedName": "JSObject1.createUser",
+    "fullyQualifiedName": "addUser_function.createUser",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject1",
+    "collectionId": "Page1_addUser_function",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('add_user_form'))\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}",
+      "body": "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form')).then(Get_users.run())\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('add_user_form'))\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}"
+      "async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form')).then(Get_users.run())\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject1.createUser",
+  "id": "Page1_addUser_function.createUser",
   "deleted": false,
   "gitSyncId": "62546fbbffd41441c6f9a799_62548112ffd41441c6f9a7b6"
 }

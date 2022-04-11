@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "addUser_function",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcreateUser: async () => {\n\t\ttry{\n\t\t\tCreate_user.run().then(showAlert('User created successfully!', 'success')).then(closeModal('addUser_form')).then(Get_users.run())\n\t\t} catch(e){\n\t\t\tshowAlert('Error - could not create user!', 'error')\t\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_addUser_function",
+  "deleted": false,
+  "gitSyncId": "62546fbbffd41441c6f9a799_62548112ffd41441c6f9a7ba"
+}
