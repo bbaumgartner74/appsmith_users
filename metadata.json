@@ -12,6 +12,10 @@
     "Page1_Get_users": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
+    },
+    "Page1_JSObject1.createUser": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
     }
   },
   "editModeTheme": {

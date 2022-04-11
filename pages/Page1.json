@@ -690,7 +690,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "VARIANT1",
                               "widgetName": "FormButton1",
-                              "onClick": "{{Create_user.run(() => showAlert('User created successfully!','success'), () => showAlert('Error - could not create user!','error'))}}",
+                              "onClick": "{{JSObject1.createUser()}}",
                               "buttonColor": "#3366FF",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.cca02633.svg",
