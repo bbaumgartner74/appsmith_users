@@ -19,12 +19,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\ttry{\n\t\t  Delete_user.run().then(showAlert('User deleted successfully!', 'success'))\n\t} catch(e){\n\t\t\tshowAlert('Error - could not delete user!', 'error')\t\n\t\t}\n\t}",
+      "body": "() => {\n       return users_table.triggeredRow.id.toString()\n    }",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\ttry{\n\t\t  Delete_user.run().then(showAlert('User deleted successfully!', 'success'))\n\t} catch(e){\n\t\t\tshowAlert('Error - could not delete user!', 'error')\t\n\t\t}\n\t}"
+      "() => {\n       return users_table.triggeredRow.id.toString()\n    }"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -43,5 +42,5 @@
   },
   "id": "Page1_deleteUser_function.deleteUser",
   "deleted": false,
-  "gitSyncId": "62546fbbffd41441c6f9a799_62548b25ffd41441c6f9a7cd"
+  "gitSyncId": "62546fbbffd41441c6f9a799_6254992bffd41441c6f9a7e7"
 }

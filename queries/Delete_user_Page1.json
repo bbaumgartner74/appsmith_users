@@ -16,7 +16,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v1/user/{{users_table.selectedRow.id}}",
+      "path": "/api/v1/user/{{id}}",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -39,7 +39,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "users_table.selectedRow.id"
+      "id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
