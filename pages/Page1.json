@@ -690,7 +690,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "VARIANT1",
                               "widgetName": "FormButton1",
-                              "onClick": "{{storeValue()}}",
+                              "onClick": "{{Create_user.run(() => showAlert('User created successfully!','success'), () => showAlert('Error - could not create user!','error'))}}",
                               "buttonColor": "#3366FF",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.cca02633.svg",
@@ -728,6 +728,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "VARIANT1",
                               "widgetName": "FormButton2",
+                              "onClick": "{{closeModal('add_user_form')}}",
                               "buttonColor": "#3366FF",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.cca02633.svg",
@@ -736,7 +737,11 @@
                               "type": "FORM_BUTTON_WIDGET",
                               "hideCard": true,
                               "animateLoading": true,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 31,
                               "dynamicBindingPathList": [],
                               "text": "Cancel",
