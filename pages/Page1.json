@@ -8,12 +8,12 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1712,
+          "rightColumn": 1936,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2460,
+          "bottomRow": 1210,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -25,60 +25,6 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
-            {
-              "boxShadow": "NONE",
-              "widgetName": "Container1",
-              "borderColor": "transparent",
-              "isCanvas": true,
-              "displayName": "Container",
-              "iconSVG": "/static/media/icon.1977dca3.svg",
-              "topRow": 166,
-              "bottomRow": 244,
-              "parentRowSpace": 10,
-              "type": "CONTAINER_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.8125,
-              "leftColumn": 0,
-              "children": [
-                {
-                  "widgetName": "Canvas1",
-                  "rightColumn": 475.5,
-                  "detachFromLayout": true,
-                  "displayName": "Canvas",
-                  "widgetId": "g3xcfgdbbd",
-                  "containerStyle": "none",
-                  "topRow": 0,
-                  "bottomRow": 710,
-                  "parentRowSpace": 1,
-                  "isVisible": true,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "version": 1,
-                  "hideCard": true,
-                  "parentId": "q42nk3glfk",
-                  "minHeight": 400,
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "children": [],
-                  "key": "y9qolndz31"
-                }
-              ],
-              "borderWidth": "0",
-              "key": "9xs18l7amt",
-              "backgroundColor": "#FFFFFF",
-              "rightColumn": 64,
-              "widgetId": "q42nk3glfk",
-              "containerStyle": "card",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "0"
-            },
             {
               "multiRowSelection": true,
               "widgetName": "Table1",
@@ -244,7 +190,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "id",
+                  "label": "ID",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
                 },
                 "first_name": {
@@ -261,7 +207,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "first_name",
+                  "label": "First Name",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.first_name))}}"
                 },
                 "last_name": {
@@ -278,7 +224,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "last_name",
+                  "label": "Last Name",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.last_name))}}"
                 },
                 "email": {
@@ -295,7 +241,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "email",
+                  "label": "Email",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email))}}"
                 },
                 "user_name": {
@@ -312,7 +258,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "user_name",
+                  "label": "Username",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.user_name))}}"
                 },
                 "age": {
@@ -329,7 +275,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "age",
+                  "label": "Age",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.age))}}"
                 },
                 "active": {
@@ -346,7 +292,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "active",
+                  "label": "Active",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.active))}}"
                 },
                 "department": {
@@ -363,7 +309,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "department",
+                  "label": "Department",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.department))}}"
                 }
               },
@@ -371,7 +317,7 @@
               "defaultSearchText": "{{first_name.text}}",
               "key": "43s1n31h7h",
               "derivedColumns": {},
-              "rightColumn": 64,
+              "rightColumn": 50,
               "textSize": "PARAGRAPH",
               "widgetId": "lpqhchy8ok",
               "isVisibleFilters": true,
@@ -403,9 +349,10 @@
                 "last_name": 191,
                 "user_name": 202,
                 "email": 234,
-                "CreatedAt": 273,
-                "UpdatedAt": 280,
-                "department": 148
+                "CreatedAt": 104,
+                "UpdatedAt": 126,
+                "department": 170,
+                "DeletedAt": 115
               }
             },
             {
@@ -932,10 +879,8 @@
           ]
         ],
         "widgetNames": [
-          "Canvas1",
           "Canvas3",
           "Canvas4",
-          "Container1",
           "FormButton1",
           "FormButton2",
           "IconButton1",
