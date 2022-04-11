@@ -20,6 +20,10 @@
     "Page1_addUser_function.createUser": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
+    },
+    "Page1_deleteUser_function.deleteUser": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
     }
   },
   "editModeTheme": {

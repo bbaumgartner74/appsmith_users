@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "deleteUser_function",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tdeleteUser: (id) => {\n\t\t  selectedRowValue.text = id\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_deleteUser_function",
+  "deleted": false,
+  "gitSyncId": "62546fbbffd41441c6f9a799_62548b25ffd41441c6f9a7d1"
+}

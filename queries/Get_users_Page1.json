@@ -17,7 +17,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "path": "/api/v1/user",
-      "headers": [],
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "none"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [],
       "httpMethod": "GET",

@@ -41,7 +41,8 @@
                 "CreatedAt",
                 "UpdatedAt",
                 "DeletedAt",
-                "ID"
+                "ID",
+                "customColumn1"
               ],
               "isVisibleDownload": false,
               "dynamicPropertyPathList": [
@@ -52,8 +53,8 @@
               "compactMode": "DEFAULT",
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
-              "topRow": 8,
-              "bottomRow": 56,
+              "topRow": 4,
+              "bottomRow": 52,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -61,7 +62,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 19.5,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
+                }
+              ],
               "dynamicBindingPathList": [
                 {
                   "key": "tableData"
@@ -104,6 +109,18 @@
                 },
                 {
                   "key": "defaultSearchText"
+                },
+                {
+                  "key": "derivedColumns.customColumn1.menuButtonLabel"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.menuButtonLabel"
+                },
+                {
+                  "key": "derivedColumns.customColumn1.buttonLabel"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.buttonLabel"
                 }
               ],
               "leftColumn": 0,
@@ -190,9 +207,9 @@
                   "textSize": "PARAGRAPH",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
-                  "isCellVisible": false,
+                  "isCellVisible": true,
                   "isDerived": false,
                   "label": "ID",
                   "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
@@ -323,12 +340,59 @@
                   "label": "Department",
                   "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.department))}}",
                   "cellBackground": ""
+                },
+                "customColumn1": {
+                  "index": 12,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "iconButton",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Actions",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#DD4B34",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF",
+                  "menuButtonLabel": "{{users_table.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
+                  "buttonLabel": "{{users_table.sanitizedTableData.map((currentRow) => ( 'Action'))}}",
+                  "iconName": "trash",
+                  "borderRadius": "CIRCLE",
+                  "onClick": "{{deleteUser_function.deleteUser(users_table.triggeredRow.id)}}"
                 }
               },
               "delimiter": ",",
               "defaultSearchText": "{{first_name.text}}",
               "key": "43s1n31h7h",
-              "derivedColumns": {},
+              "derivedColumns": {
+                "customColumn1": {
+                  "index": 12,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "iconButton",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Actions",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonLabelColor": "#FFFFFF",
+                  "buttonColor": "#DD4B34",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF",
+                  "menuButtonLabel": "{{users_table.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
+                  "buttonLabel": "{{users_table.sanitizedTableData.map((currentRow) => ( 'Action'))}}",
+                  "iconName": "trash"
+                }
+              },
               "rightColumn": 48,
               "textSize": "PARAGRAPH",
               "widgetId": "lpqhchy8ok",
@@ -361,10 +425,10 @@
                 "first_name": 223,
                 "last_name": 228,
                 "user_name": 268,
-                "email": 288,
+                "email": 220,
                 "CreatedAt": 86,
                 "UpdatedAt": 78,
-                "department": 187,
+                "department": 204,
                 "DeletedAt": 60
               }
             },
@@ -849,8 +913,8 @@
               "buttonColor": "#3366FF",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca02633.svg",
-              "topRow": 3,
-              "bottomRow": 7,
+              "topRow": 0,
+              "bottomRow": 4,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -880,6 +944,38 @@
               "buttonVariant": "PRIMARY",
               "iconAlign": "left",
               "placement": "CENTER"
+            },
+            {
+              "widgetName": "selectedRowValue",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595.svg",
+              "topRow": 56,
+              "bottomRow": 60,
+              "parentRowSpace": 10,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 30.0625,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 13,
+              "dynamicBindingPathList": [],
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "c157rggaw6",
+              "isRequired": false,
+              "rightColumn": 33,
+              "widgetId": "b8z3yotyxz",
+              "isVisible": true,
+              "label": "selectedRow:id",
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "iconAlign": "left",
+              "defaultText": ""
             }
           ]
         },
@@ -911,6 +1007,7 @@
           "email",
           "first_name",
           "last_name",
+          "selectedRowValue",
           "user_form",
           "user_name",
           "users_table"
