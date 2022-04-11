@@ -9,6 +9,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "Page1_Delete_user": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "Page1_Get_users": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false

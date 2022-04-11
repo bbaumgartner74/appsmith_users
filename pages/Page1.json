@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1869,
+          "rightColumn": 1712,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -26,7 +26,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "multiRowSelection": true,
+              "multiRowSelection": false,
               "widgetName": "users_table",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -53,11 +53,11 @@
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 8,
-              "bottomRow": 56,
+              "bottomRow": 57,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
+              "defaultSelectedRow": "",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 19.5,
@@ -123,7 +123,8 @@
                   "isCellVisible": false,
                   "isDerived": false,
                   "label": "ID",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.ID))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.ID))}}",
+                  "cellBackground": ""
                 },
                 "CreatedAt": {
                   "index": 1,
@@ -140,7 +141,8 @@
                   "isCellVisible": false,
                   "isDerived": false,
                   "label": "CreatedAt",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.CreatedAt))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.CreatedAt))}}",
+                  "cellBackground": ""
                 },
                 "UpdatedAt": {
                   "index": 2,
@@ -157,7 +159,8 @@
                   "isCellVisible": false,
                   "isDerived": false,
                   "label": "UpdatedAt",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.UpdatedAt))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.UpdatedAt))}}",
+                  "cellBackground": ""
                 },
                 "DeletedAt": {
                   "index": 3,
@@ -174,7 +177,8 @@
                   "isCellVisible": false,
                   "isDerived": false,
                   "label": "DeletedAt",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.DeletedAt))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.DeletedAt))}}",
+                  "cellBackground": ""
                 },
                 "id": {
                   "index": 4,
@@ -188,10 +192,11 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "ID",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "cellBackground": ""
                 },
                 "first_name": {
                   "index": 5,
@@ -208,7 +213,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "First Name",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.first_name))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.first_name))}}",
+                  "cellBackground": ""
                 },
                 "last_name": {
                   "index": 6,
@@ -225,7 +231,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Last Name",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.last_name))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.last_name))}}",
+                  "cellBackground": ""
                 },
                 "email": {
                   "index": 7,
@@ -242,7 +249,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Email",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.email))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.email))}}",
+                  "cellBackground": ""
                 },
                 "user_name": {
                   "index": 8,
@@ -259,7 +267,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Username",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.user_name))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.user_name))}}",
+                  "cellBackground": ""
                 },
                 "age": {
                   "index": 9,
@@ -276,7 +285,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Age",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.age))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.age))}}",
+                  "cellBackground": ""
                 },
                 "active": {
                   "index": 10,
@@ -293,7 +303,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Active",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.active))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.active))}}",
+                  "cellBackground": ""
                 },
                 "department": {
                   "index": 11,
@@ -310,7 +321,8 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Department",
-                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.department))}}"
+                  "computedValue": "{{users_table.sanitizedTableData.map((currentRow) => ( currentRow.department))}}",
+                  "cellBackground": ""
                 }
               },
               "delimiter": ",",
@@ -335,6 +347,7 @@
               "isVisibleSearch": true,
               "isVisiblePagination": true,
               "primaryColumnId": "id",
+              "cellBackground": "",
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
                 "task": 157,
@@ -848,7 +861,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 44,
+              "leftColumn": 43,
               "dynamicBindingPathList": [],
               "text": "Add user",
               "isDisabled": false,
