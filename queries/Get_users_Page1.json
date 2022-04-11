@@ -17,12 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "path": "/api/v1/user",
-      "headers": [
-        {
-          "key": "content-type",
-          "value": "none"
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
       "httpMethod": "GET",
@@ -32,7 +27,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": true,

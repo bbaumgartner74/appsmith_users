@@ -17,12 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "path": "/api/v1/user",
-      "headers": [
-        {
-          "key": "content-type",
-          "value": "application/json"
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
       "body": "{\n\t\"first_name\": {{user_form.data.first_name}},\n\t\"last_name\": {{user_form.data.last_name}},\n\t\"email\": {{user_form.data.email}},\n\t\"user_name\": {{user_form.data.user_name}},\n\t\"age\": {{user_form.data.age}},\n\t\"active\": {{user_form.data.active}},\n\t\"department\": {{user_form.data.department}}\n}",

@@ -16,7 +16,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v1/user/{{id}}",
+      "path": "/api/v1/user",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -38,9 +38,7 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
